@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import ru.mypodcast.mypodcast.dto.LoadPodcastRequest;
 import ru.mypodcast.mypodcast.service.PodcastService;
 
-
 @RestController
 @RequestMapping("/podcasts")
 public class PodcastsController {
