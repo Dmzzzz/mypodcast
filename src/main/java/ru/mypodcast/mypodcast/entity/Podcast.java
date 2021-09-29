@@ -33,6 +33,9 @@ public class Podcast {
     @CreationTimestamp
     @Column(name = "upload_date")
     private LocalDateTime uploadDate;
+    /** Файл mp3 */
+    @Column(name = "track")
+    private byte[] track;
 
     public Podcast() {
     }
@@ -91,5 +94,13 @@ public class Podcast {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public byte[] getTrack() {
+        return track;
+    }
+
+    public void setTrack(byte[] track) {
+        this.track = track;
     }
 }
